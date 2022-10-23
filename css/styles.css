@@ -12,6 +12,7 @@
   --icon-color: #afb1b8;
   --btn-bgc-hover: #188ce8;
   --border-color: #eeeeee;
+  --bgc-thumb-portfolio: rgba(33, 150, 243, 0.9);
   --cubic-hover: cubic-bezier(0.4, 0, 0.2, 1);
   --timing-function: 250ms;
 }
@@ -492,6 +493,36 @@ h6 {
 
 .portfolio-list {
   width: calc((100% - 60px) / 3);
+}
+
+.portfolio-backdrop {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bgc-thumb-portfolio);
+  transform: translateY(100%);
+  transition: transform var(--timing-function) var(--cubic-hover),
+    opacity var(--timing-function) var(--cubic-hover);
+}
+
+.portfolio-list:hover .portfolio-thumb {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-text-thumb {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
 }
 
 .card-text {
