@@ -509,8 +509,7 @@ h6 {
   height: 100%;
   background-color: var(--bgc-thumb-portfolio);
   transform: translateY(100%);
-  transition: transform var(--timing-function) var(--cubic-hover),
-    opacity var(--timing-function) var(--cubic-hover);
+  transition: transform var(--timing-function) var(--cubic-hover);
 }
 
 .portfolio-list:hover .portfolio-thumb {
