@@ -162,7 +162,7 @@ h6 {
 
 .current::after {
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   left: 0px;
 
   content: '';
